@@ -307,6 +307,6 @@ def run(alleles, proteins, viral_proteins, mix_threshold, maria_threshold):
                     csv_writer.writerow([allele, l.seq, l.protein, l.core, l.closest_viral.protein.split("-")[0], l.closest_viral.protein, l.closest_viral.seq, l.closest_viral.core, l.blosum, l.max_blosum, l.mix, l.closest_viral.mix, l.maria, l.closest_viral.maria])
 
 alleles = "input/alleles.csv"
-proteins = "input/old_proteins.csv"
+proteins = "input/proteins.csv"
 viral_prots = "input/viralproteins.csv"
 run(alleles, proteins, viral_prots, 2.00, 95.00)
